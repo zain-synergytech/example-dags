@@ -7,8 +7,6 @@ def hello():
 
 with DAG(
     dag_id="hello_world",
-    start_date=datetime(2025, 1, 1),
-    schedule_interval=None,  # Run only when triggered manually
     catchup=False,
     tags=["example"],
 ) as dag:
